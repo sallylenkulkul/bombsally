@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F3E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+.ficha {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+
+}
+
+h2 {
+    width: 280px;
+    height: 60px;
+    color: white;
+    display: flex;
+    background-color: #0400A4;
+    max-width: 500px; /* Limita a largura máxima para 220px */
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-decoration: underline;
+    padding: 10px; /* Adicione algum espaçamento interno */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+.prox {
+    width: 120px;
+    height: 30px;
+    background-color: #0400A4;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    max-width: 180px; /* Limita a largura máxima para 180px */
+    margin: 0 ;
+    font-weight: bold;
+    justify-items:center ;
+}
+
+button:hover {
+    background-color: #0400A4;
+
+}
+
+.caixa {
+    border-radius: 30px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    margin-top: 5px;
+    width: 180px;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100px;
+    margin-left: -10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Alinhar verticalmente ao centro */
+    background: rgb(212, 31, 31);
+    background: linear-gradient(0deg, rgba(212, 31, 31, 1) 26%, rgba(141, 25, 28, 1) 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}

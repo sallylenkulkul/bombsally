@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo de Recusa</title>
+    <link rel="stylesheet" href="termo_recusa.css">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="menu.png" width="350px" class="menu">
+    </div>
+    <div class="quadrado">
+        <div class="titulo"><br>
+            <h2> Termo de Recusa </h2> <br>
+        </div>
+        <div class="ficha">
+            <form action="inserir.php" method="post">
+                <div class="forms">
+                    <div class="opcoes">
+                        <div class="d1">
+                            <div class="p1">
+                                Baixe o PDF abaixo para imprimir e assinar<br>
+                            </div>
+                            <div class="p2">
+                                <img src="termoRecusaImg.png" onclick="Imprimir()">
+                            </div>
+                        </div>
+                        <br>
+
+                </div>
+                <button type="submit" class="imp" onclick="Imprimir()" >Imprimir PDF</button>
+                
+                <script>
+                    function imprimir() {
+                        window.print();
+                    }
+                </script>
+                <br>
+                <div class="botao">
+                    <button type="submit" class="prox">Próximo</button>
+                </div><br>
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
