@@ -1,6 +1,6 @@
 <?php
 session_start();
-$FK_IdOcorrencia = 43;//$_SESSION["id"];
+$FK_IdOcorrencia = 45;//$_SESSION["id"];
 
     include("conecta.php");
 

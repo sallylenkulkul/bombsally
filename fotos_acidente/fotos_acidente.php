@@ -52,8 +52,10 @@ while( $linhas = $comando->fetch() )
             <div id="image-container" class="img">
             </div>
             <form action="salvar_imagem.php" method="post" enctype="multipart/form-data">
-                <input type="file" id="image-input" name="arquivo" accept="image/.jpeg" class="envimg"><br>
+                <input type="file"  name="arquivo" accept="image/.jpeg" class="envimg"><br>
                 <br>
+                <div class="selecione" value="foto" id="selecione" onclick="openFileInput()">Selecione uma Imagem</div>
+
                 <div class="botao">
                     <button type="submit" class="prox">Gravar</button>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$FK_IdOcorrencia = $_SESSION["id"];
+$FK_IdOcorrencia = 45;//$_SESSION["id"];
 
     include("conecta.php");
 
@@ -24,14 +24,14 @@ $FK_IdOcorrencia = $_SESSION["id"];
     $quedamenor2m  = isset($_POST["quedamenor2m"])?1:0;
     $trabalho  = isset($_POST["trabalho"])?1:0;
     $transf  = isset($_POST["transf"])?1:0;
-    $outrotext  = isset($_POST["outrotext"])?1:0;
+    $outrotext  = $_POST["outrotext"];
 
     
 
 
     $comando = $pdo->prepare("INSERT INTO tipo_ocorrencia VALUES ($FK_IdOcorrencia, $causado, $transporte, 
     $desmor, $emerg, $queda2m, $suicidio, $quedaaltura, $afogamento, $agressao, $atrop, $choque, $desab, 
-    $dom, $esp, $intox, $quedabic, $quedamoto, $quedamenor2m, $trabalho, $transf, $outrotext )");
+    $dom, $esp, $intox, $quedabic, $quedamoto, $quedamenor2m, $trabalho, $transf, '$outrotext' )");
     $resultado = $comando->execute();
 
 
